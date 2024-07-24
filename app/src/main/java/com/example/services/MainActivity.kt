@@ -61,6 +61,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStop() {
         super.onStop()
-        stopService(service)
+//        stopService(service)
     }
 }
