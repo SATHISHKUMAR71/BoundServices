@@ -57,6 +57,10 @@ class MainActivity : AppCompatActivity() {
                 findViewById<TextView>(R.id.textView).text = "No Bound Services Found"
             }
         }
+    }
 
+    override fun onStop() {
+        super.onStop()
+        stopService(service)
     }
 }
